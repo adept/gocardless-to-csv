@@ -124,7 +124,6 @@ def convert(client,config,args):
     """
     Convert GoCardless JSON file to CSV
     """
-    print(args.json_file)
     # Read the JSON file
     with open(args.json_file, 'r') as f:
         transactions = json.load(f)
@@ -139,6 +138,7 @@ def convert(client,config,args):
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for trx in transactions:
+            # This is heavily based on tariochbctools
             if "transactionId" in trx:
                 row = {
                     "GoCardlessRef": trx["transactionId"],
@@ -167,7 +167,6 @@ def convert(client,config,args):
             row['description'] = description
             row["transactionAmount"] = trx["transactionAmount"]["currency"] + " " + trx["transactionAmount"]["amount"]
             writer.writerow(row)
-
 
 if __name__ == "__main__":
     # Parse command line arguments
