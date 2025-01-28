@@ -90,14 +90,13 @@ def fetch(client, config, args):
                 print(f"  Error fetching transactions for {account}: {e}")
                 continue
 
-            # TODO: we ignore transactions['transactions']['pending'] for now
-            # transactions=transactions['transactions']['booked']
             if args.debug:
                 print(transactions)
             if config[account]['file']:
-                json.dump(transactions,config[account]['file'])
+                with open(config[account]['file'], 'w') as f:
+                    json.dump(transactions,f,indent=2)
             else:
-                print(json.dumps(transactions))
+                print(json.dumps(transactions,indent=2))
 
 def convert(client,config,args):
     """
