@@ -73,6 +73,11 @@ def list_accounts(client, config, args):
         for account in req['accounts']:
             print(f"  account: {account}")
 
+def last_day_of_month(date):
+    if date.month == 12:
+        return date.replace(day=31)
+    return date.replace(month=date.month+1, day=1) - datetime.timedelta(days=1)
+
 def fetch(client, config, args):
     """
     Fetch transactions from all linked banks and save them into output files
@@ -95,6 +100,14 @@ def fetch(client, config, args):
                         date_to = datetime.now().strftime("%Y-%m-%d")
                     else:
                         date_to = f"{args.year}-12-31"
+                elif args.month:
+                    date_from = f"{args.month}-01"
+                    date_to = last_day_of_month(datetime.fromisoformat(date_from))
+                    today = datetime.now()
+                    if date_to > today:
+                        date_to = datetime.now().strftime("%Y-%m-%d")
+                    else:
+                        date_to = date_to.strftime("%Y-%m-%d")
                 else:
                     date_from = args.start
                     date_to = args.end
@@ -187,7 +200,8 @@ if __name__ == "__main__":
     parser_fetch.add_argument("--start", type=str, help="Start date, YYYY-MM-DD")
     parser_fetch.add_argument("--end", type=str, help="End date, YYYY-MM-DD")
     parser_fetch.add_argument("--reference", type=str, help="Process only this reference")
-    parser_fetch.add_argument("--year", type=int, help="Year, equivalent of --start <year>-01-01 --end <year>-12-31 or current date, whichever is earler")
+    parser_fetch.add_argument("--year", type=int, help="YYYY, equivalent of --start <year>-01-01 --end <year>-12-31 or current date, whichever is earler")
+    parser_fetch.add_argument("--month", type=str, help="YYYY-MM, equivalent of --start <year>-01-01 --end <year>-12-31 or current date, whichever is earler")
     parser_fetch.set_defaults(func=fetch)
 
     parser_convert = subparsers.add_parser('convert', help='Convert GoCardless JSON file to CSV')
