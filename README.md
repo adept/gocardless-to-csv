@@ -25,6 +25,10 @@ As of 2025, GoCardless is mostly limited to Europe, and most notably does not su
 
 GoCardless has pretty severe API usage limits - you can run `fetch` at most 4 times per 24 hours, and `link` at most 50 institutions.
 
+Lots of banks allow access to just last 90 days of transactions.
+
+Obviously, you need to be happy with GoCardless seeing your accounts and transactions, and your bank knowing that you've enabled this access.
+
 # Installation
 
 Clone this repository and run `pip install -r requirements.txt`.
@@ -100,8 +104,7 @@ filled out using the start date of the fetch, and all the necessary directories 
 Run `gocardless-to-csv fetch` to fetch all account from all links, or `gocardless-to-csv fetch --ref <your link reference>` to
 fetch only the accounts from the named link. 
 
-You can restrict the time period with `--start YYYY-MM-DD` and `--end YYYY-MM-DD`, or use `--year YYYY` which will set start and
-end dates accordingly. GoCardless does not accept end dates that are in the future!
+You can restrict the time period with `--start YYYY-MM-DD` and `--end YYYY-MM-DD`, or use `--year YYYY` or `--month YYYY-MM` which will set start and end dates accordingly. GoCardless does not accept end dates that are in the future!
 
 Transactions will be saved to the file specified in `config.ini`
 
@@ -127,6 +130,18 @@ GoCardless rate limits -- you would want to keep your `fetch` invocations to a m
 - `description` - description collected by GoCardless
 
 - `GoCardlessRef` - unique transaction ID provided by GoCardless
+
+# Suggested workflow
+
+- set everything up
+
+- configure your files to go into `%Y/%m/<account_name>.json`
+
+- After the end of the month YYYY-MM, run `gocardless-to-csv --month YYYY-MM` and fetch all JSON files
+
+- Convert them to CSV
+
+- Use `hledger print` or something similar to include the CSV files into your accounting setup
 
 # HLedger rules for importing those files
 
