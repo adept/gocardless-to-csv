@@ -47,6 +47,8 @@ GoCardless provides "developer sandbox" with a pre-made link to a toy "bank" tha
 
 You can try the tool with this sandbox, by running `gocardless-to-csv setup --sandbox`
 
+I've included an example of Sandbox transaction file and its conversion to CSV in the `examples` folder.
+
 # Linking your bank(s)
 
 Run `gocardless-to-csv setup`, enter your country code and then select your institution from the list.

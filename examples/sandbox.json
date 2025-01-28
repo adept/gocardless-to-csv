@@ -1,0 +1,857 @@
+{
+  "transactions": {
+    "booked": [
+      {
+        "transactionId": "2025012701773517-1",
+        "entryReference": "2025012701773517-1",
+        "bookingDate": "2025-01-27",
+        "valueDate": "2025-01-27",
+        "transactionAmount": {
+          "amount": "-95.35",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Clerkenwell",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "c0bf1cb5528117afc3ae0fb6f6db0b06"
+      },
+      {
+        "transactionId": "2025012701773516-1",
+        "entryReference": "2025012701773516-1",
+        "bookingDate": "2025-01-26",
+        "valueDate": "2025-01-26",
+        "transactionAmount": {
+          "amount": "15.00",
+          "currency": "EUR"
+        },
+        "debtorName": "Jennifer Houston",
+        "debtorAccount": {
+          "iban": "IE96BOFI900017816198"
+        },
+        "remittanceInformationUnstructured": "Cab sharing, thank you!",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "738f68cc97e1f706fbc3e0b35220fb9c"
+      },
+      {
+        "transactionId": "2025012701773520-1",
+        "entryReference": "2025012701773520-1",
+        "bookingDate": "2025-01-26",
+        "valueDate": "2025-01-26",
+        "transactionAmount": {
+          "amount": "-95.35",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Clerkenwell",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "414af1a0e95f5783cc5891b9a45ef210"
+      },
+      {
+        "transactionId": "2025012701773515-1",
+        "entryReference": "2025012701773515-1",
+        "bookingDate": "2025-01-25",
+        "valueDate": "2025-01-25",
+        "transactionAmount": {
+          "amount": "-950.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Liam Brown",
+        "creditorAccount": {
+          "iban": "GB49BARC20040478743951"
+        },
+        "remittanceInformationUnstructured": "Monthly Rent Victoria Embankment 45",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "2bade9a818ecaa05d408319a70a1e491"
+      },
+      {
+        "transactionId": "2025012701773519-1",
+        "entryReference": "2025012701773519-1",
+        "bookingDate": "2025-01-25",
+        "valueDate": "2025-01-25",
+        "transactionAmount": {
+          "amount": "15.00",
+          "currency": "EUR"
+        },
+        "debtorName": "Jennifer Houston",
+        "debtorAccount": {
+          "iban": "IE96BOFI900017816198"
+        },
+        "remittanceInformationUnstructured": "Cab sharing, thank you!",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "38b6c54afa6bf2cd29af9e82fcfa1cfe"
+      },
+      {
+        "transactionId": "2025012701773523-1",
+        "entryReference": "2025012701773523-1",
+        "bookingDate": "2025-01-25",
+        "valueDate": "2025-01-25",
+        "transactionAmount": {
+          "amount": "-95.35",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Clerkenwell",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "2893f149e707aea729638dc1824c5d78"
+      },
+      {
+        "transactionId": "2025012701773514-1",
+        "entryReference": "2025012701773514-1",
+        "bookingDate": "2025-01-24",
+        "valueDate": "2025-01-24",
+        "transactionAmount": {
+          "amount": "-35.56",
+          "currency": "EUR"
+        },
+        "creditorName": "Liam Brown",
+        "creditorAccount": {
+          "iban": "GB49BARC20040478743951"
+        },
+        "remittanceInformationUnstructured": "Water invoice #5678",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "8776f6c838e242534caca7801c122dd8"
+      },
+      {
+        "transactionId": "2025012701773518-1",
+        "entryReference": "2025012701773518-1",
+        "bookingDate": "2025-01-24",
+        "valueDate": "2025-01-24",
+        "transactionAmount": {
+          "amount": "-950.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Liam Brown",
+        "creditorAccount": {
+          "iban": "GB49BARC20040478743951"
+        },
+        "remittanceInformationUnstructured": "Monthly Rent Victoria Embankment 45",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "feea8ff1d88a7412e4c5913cda27aa92"
+      },
+      {
+        "transactionId": "2025012701773522-1",
+        "entryReference": "2025012701773522-1",
+        "bookingDate": "2025-01-24",
+        "valueDate": "2025-01-24",
+        "transactionAmount": {
+          "amount": "15.00",
+          "currency": "EUR"
+        },
+        "debtorName": "Jennifer Houston",
+        "debtorAccount": {
+          "iban": "IE96BOFI900017816198"
+        },
+        "remittanceInformationUnstructured": "Cab sharing, thank you!",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "3ac87023909a8a16ac37664b7e935bd0"
+      },
+      {
+        "transactionId": "2025012701773513-1",
+        "entryReference": "2025012701773513-1",
+        "bookingDate": "2025-01-23",
+        "valueDate": "2025-01-23",
+        "transactionAmount": {
+          "amount": "-24.56",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Clerkenwell",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "2716bebbe770cc210fb8c19df17713eb"
+      },
+      {
+        "transactionId": "2025012701773517-1",
+        "entryReference": "2025012701773517-1",
+        "bookingDate": "2025-01-23",
+        "valueDate": "2025-01-23",
+        "transactionAmount": {
+          "amount": "-35.56",
+          "currency": "EUR"
+        },
+        "creditorName": "Liam Brown",
+        "creditorAccount": {
+          "iban": "GB49BARC20040478743951"
+        },
+        "remittanceInformationUnstructured": "Water invoice #5678",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "e01808773df38abe4e85240e6acaf138"
+      },
+      {
+        "transactionId": "2025012701773521-1",
+        "entryReference": "2025012701773521-1",
+        "bookingDate": "2025-01-23",
+        "valueDate": "2025-01-23",
+        "transactionAmount": {
+          "amount": "-950.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Liam Brown",
+        "creditorAccount": {
+          "iban": "GB49BARC20040478743951"
+        },
+        "remittanceInformationUnstructured": "Monthly Rent Victoria Embankment 45",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "06e42f211074f5bb36c56db397724e96"
+      },
+      {
+        "transactionId": "2025012701773512-1",
+        "entryReference": "2025012701773512-1",
+        "bookingDate": "2025-01-22",
+        "valueDate": "2025-01-22",
+        "transactionAmount": {
+          "amount": "-3.5",
+          "currency": "EUR"
+        },
+        "creditorName": "Brewdigen Coffee Roastery",
+        "remittanceInformationUnstructured": "Brewdigen Knightsbridge",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "6b9755ea7877221120a2b1c53e90fb43"
+      },
+      {
+        "transactionId": "2025012701773516-1",
+        "entryReference": "2025012701773516-1",
+        "bookingDate": "2025-01-22",
+        "valueDate": "2025-01-22",
+        "transactionAmount": {
+          "amount": "-24.56",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Clerkenwell",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "b85de03151b0ff51ce2d40cb3510eb8c"
+      },
+      {
+        "transactionId": "2025012701773520-1",
+        "entryReference": "2025012701773520-1",
+        "bookingDate": "2025-01-22",
+        "valueDate": "2025-01-22",
+        "transactionAmount": {
+          "amount": "-35.56",
+          "currency": "EUR"
+        },
+        "creditorName": "Liam Brown",
+        "creditorAccount": {
+          "iban": "GB49BARC20040478743951"
+        },
+        "remittanceInformationUnstructured": "Water invoice #5678",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER",
+        "internalTransactionId": "f53d4e14c301e66487597915d2025770"
+      },
+      {
+        "transactionId": "2025012701773511-1",
+        "entryReference": "2025012701773511-1",
+        "bookingDate": "2025-01-21",
+        "valueDate": "2025-01-21",
+        "transactionAmount": {
+          "amount": "-4.0",
+          "currency": "EUR"
+        },
+        "creditorName": "Metro Urbano",
+        "remittanceInformationUnstructured": "Metro Urbano S.A.",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "f66429d107dd1cabd4a844c77a8448f4"
+      },
+      {
+        "transactionId": "2025012701773515-1",
+        "entryReference": "2025012701773515-1",
+        "bookingDate": "2025-01-21",
+        "valueDate": "2025-01-21",
+        "transactionAmount": {
+          "amount": "-3.5",
+          "currency": "EUR"
+        },
+        "creditorName": "Brewdigen Coffee Roastery",
+        "remittanceInformationUnstructured": "Brewdigen Knightsbridge",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "425ad077ce2b5c9e91eca75a60aa7d2d"
+      },
+      {
+        "transactionId": "2025012701773519-1",
+        "entryReference": "2025012701773519-1",
+        "bookingDate": "2025-01-21",
+        "valueDate": "2025-01-21",
+        "transactionAmount": {
+          "amount": "-24.56",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Clerkenwell",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "8d55770fa67795a5339db5f8930c2329"
+      },
+      {
+        "transactionId": "2025012701773510-1",
+        "entryReference": "2025012701773510-1",
+        "bookingDate": "2025-01-20",
+        "valueDate": "2025-01-20",
+        "transactionAmount": {
+          "amount": "-4.0",
+          "currency": "EUR"
+        },
+        "creditorName": "MNR",
+        "remittanceInformationUnstructured": "Museo Nacional Real",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "d61d53f21cbfacd73d234da354d6ddb6"
+      },
+      {
+        "transactionId": "2025012701773514-1",
+        "entryReference": "2025012701773514-1",
+        "bookingDate": "2025-01-20",
+        "valueDate": "2025-01-20",
+        "transactionAmount": {
+          "amount": "-4.0",
+          "currency": "EUR"
+        },
+        "creditorName": "Metro Urbano",
+        "remittanceInformationUnstructured": "Metro Urbano S.A.",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "69534ba02a671adf07a06c9beade5e0b"
+      },
+      {
+        "transactionId": "2025012701773518-1",
+        "entryReference": "2025012701773518-1",
+        "bookingDate": "2025-01-20",
+        "valueDate": "2025-01-20",
+        "transactionAmount": {
+          "amount": "-3.5",
+          "currency": "EUR"
+        },
+        "creditorName": "Brewdigen Coffee Roastery",
+        "remittanceInformationUnstructured": "Brewdigen Knightsbridge",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "c1412cd8ddda70bc211e936ec525346a"
+      },
+      {
+        "transactionId": "2025012701773509-1",
+        "entryReference": "2025012701773509-1",
+        "bookingDate": "2025-01-19",
+        "valueDate": "2025-01-19",
+        "transactionAmount": {
+          "amount": "-45.76",
+          "currency": "EUR"
+        },
+        "creditorName": "Estacion de Autoservicio CIRISA",
+        "remittanceInformationUnstructured": "Estacion de Autoservicio CIRISA",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "c66eb35eefb0caf57ee2e7f4fccca8f4"
+      },
+      {
+        "transactionId": "2025012701773513-1",
+        "entryReference": "2025012701773513-1",
+        "bookingDate": "2025-01-19",
+        "valueDate": "2025-01-19",
+        "transactionAmount": {
+          "amount": "-4.0",
+          "currency": "EUR"
+        },
+        "creditorName": "MNR",
+        "remittanceInformationUnstructured": "Museo Nacional Real",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "944dbc2475c46a0d0b0146dca7ae2a7e"
+      },
+      {
+        "transactionId": "2025012701773517-1",
+        "entryReference": "2025012701773517-1",
+        "bookingDate": "2025-01-19",
+        "valueDate": "2025-01-19",
+        "transactionAmount": {
+          "amount": "-4.0",
+          "currency": "EUR"
+        },
+        "creditorName": "Metro Urbano",
+        "remittanceInformationUnstructured": "Metro Urbano S.A.",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "476641961f7b9981233d0dad30556344"
+      },
+      {
+        "transactionId": "2025012701773508-1",
+        "entryReference": "2025012701773508-1",
+        "bookingDate": "2025-01-18",
+        "valueDate": "2025-01-18",
+        "transactionAmount": {
+          "amount": "-5.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Jennifer Houston",
+        "creditorAccount": {
+          "iban": "IE96BOFI900017816198"
+        },
+        "remittanceInformationUnstructured": "Gas station Spain",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "638bc9526795bce3cf86d386af0e814e"
+      },
+      {
+        "transactionId": "2025012701773512-1",
+        "entryReference": "2025012701773512-1",
+        "bookingDate": "2025-01-18",
+        "valueDate": "2025-01-18",
+        "transactionAmount": {
+          "amount": "-45.76",
+          "currency": "EUR"
+        },
+        "creditorName": "Estacion de Autoservicio CIRISA",
+        "remittanceInformationUnstructured": "Estacion de Autoservicio CIRISA",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "d81d02a8a963e587c862888f36d87564"
+      },
+      {
+        "transactionId": "2025012701773516-1",
+        "entryReference": "2025012701773516-1",
+        "bookingDate": "2025-01-18",
+        "valueDate": "2025-01-18",
+        "transactionAmount": {
+          "amount": "-4.0",
+          "currency": "EUR"
+        },
+        "creditorName": "MNR",
+        "remittanceInformationUnstructured": "Museo Nacional Real",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "b25cd8a2cf70ce44efd0d09b4cb2c723"
+      },
+      {
+        "transactionId": "2025012701773507-1",
+        "entryReference": "2025012701773507-1",
+        "bookingDate": "2025-01-17",
+        "valueDate": "2025-01-17",
+        "transactionAmount": {
+          "amount": "-15.99",
+          "currency": "EUR"
+        },
+        "creditorName": "Dutme Duty Free",
+        "remittanceInformationUnstructured": "Dutme Duty Free",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "53768c038770233b4076f9aee2f39c14"
+      },
+      {
+        "transactionId": "2025012701773511-1",
+        "entryReference": "2025012701773511-1",
+        "bookingDate": "2025-01-17",
+        "valueDate": "2025-01-17",
+        "transactionAmount": {
+          "amount": "-5.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Jennifer Houston",
+        "creditorAccount": {
+          "iban": "IE96BOFI900017816198"
+        },
+        "remittanceInformationUnstructured": "Gas station Spain",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "9e43a9f0864eca813f97d09039cf0896"
+      },
+      {
+        "transactionId": "2025012701773515-1",
+        "entryReference": "2025012701773515-1",
+        "bookingDate": "2025-01-17",
+        "valueDate": "2025-01-17",
+        "transactionAmount": {
+          "amount": "-45.76",
+          "currency": "EUR"
+        },
+        "creditorName": "Estacion de Autoservicio CIRISA",
+        "remittanceInformationUnstructured": "Estacion de Autoservicio CIRISA",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "c5c423e1489d22099ed04712b35a59d6"
+      },
+      {
+        "transactionId": "2025012701773506-1",
+        "entryReference": "2025012701773506-1",
+        "bookingDate": "2025-01-16",
+        "valueDate": "2025-01-16",
+        "transactionAmount": {
+          "amount": "-10.99",
+          "currency": "EUR"
+        },
+        "creditorName": "EpicStreamPlus",
+        "remittanceInformationUnstructured": "EpicStreamPlus",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "6be97035cd1045035f59d4a9c34bc574"
+      },
+      {
+        "transactionId": "2025012701773510-1",
+        "entryReference": "2025012701773510-1",
+        "bookingDate": "2025-01-16",
+        "valueDate": "2025-01-16",
+        "transactionAmount": {
+          "amount": "-15.99",
+          "currency": "EUR"
+        },
+        "creditorName": "Dutme Duty Free",
+        "remittanceInformationUnstructured": "Dutme Duty Free",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "6c569cbbd6e0379bc13e6127060a581a"
+      },
+      {
+        "transactionId": "2025012701773514-1",
+        "entryReference": "2025012701773514-1",
+        "bookingDate": "2025-01-16",
+        "valueDate": "2025-01-16",
+        "transactionAmount": {
+          "amount": "-5.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Jennifer Houston",
+        "creditorAccount": {
+          "iban": "IE96BOFI900017816198"
+        },
+        "remittanceInformationUnstructured": "Gas station Spain",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "9e7903b1724c711dcdf593a9384d7630"
+      },
+      {
+        "transactionId": "2025012701773505-1",
+        "entryReference": "2025012701773505-1",
+        "bookingDate": "2025-01-15",
+        "valueDate": "2025-01-15",
+        "transactionAmount": {
+          "amount": "-49.99",
+          "currency": "EUR"
+        },
+        "creditorName": "Dortshine Dentists",
+        "remittanceInformationUnstructured": "Dortshine Dentists",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "65261e88ec900edd1bfb5088583e88e8"
+      },
+      {
+        "transactionId": "2025012701773509-1",
+        "entryReference": "2025012701773509-1",
+        "bookingDate": "2025-01-15",
+        "valueDate": "2025-01-15",
+        "transactionAmount": {
+          "amount": "-10.99",
+          "currency": "EUR"
+        },
+        "creditorName": "EpicStreamPlus",
+        "remittanceInformationUnstructured": "EpicStreamPlus",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "4f0fb370cccb3a1fde86cc4d9a092043"
+      },
+      {
+        "transactionId": "2025012701773513-1",
+        "entryReference": "2025012701773513-1",
+        "bookingDate": "2025-01-15",
+        "valueDate": "2025-01-15",
+        "transactionAmount": {
+          "amount": "-15.99",
+          "currency": "EUR"
+        },
+        "creditorName": "Dutme Duty Free",
+        "remittanceInformationUnstructured": "Dutme Duty Free",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "ca48ed589bbb414b6381bae41c2b99b6"
+      },
+      {
+        "transactionId": "2025012701773504-1",
+        "entryReference": "2025012701773504-1",
+        "bookingDate": "2025-01-14",
+        "valueDate": "2025-01-14",
+        "transactionAmount": {
+          "amount": "-9.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Bet Runebor",
+        "remittanceInformationUnstructured": "Bet Runebor",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "5472f3bf042748375698e95ee1e6bbcc"
+      },
+      {
+        "transactionId": "2025012701773508-1",
+        "entryReference": "2025012701773508-1",
+        "bookingDate": "2025-01-14",
+        "valueDate": "2025-01-14",
+        "transactionAmount": {
+          "amount": "-49.99",
+          "currency": "EUR"
+        },
+        "creditorName": "Dortshine Dentists",
+        "remittanceInformationUnstructured": "Dortshine Dentists",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "2c3d1410fa591658c7f40e66afd202c0"
+      },
+      {
+        "transactionId": "2025012701773512-1",
+        "entryReference": "2025012701773512-1",
+        "bookingDate": "2025-01-14",
+        "valueDate": "2025-01-14",
+        "transactionAmount": {
+          "amount": "-10.99",
+          "currency": "EUR"
+        },
+        "creditorName": "EpicStreamPlus",
+        "remittanceInformationUnstructured": "EpicStreamPlus",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "f9ae7efb586753da718d424f3919cad7"
+      },
+      {
+        "transactionId": "2025012701773503-1",
+        "entryReference": "2025012701773503-1",
+        "bookingDate": "2025-01-13",
+        "valueDate": "2025-01-13",
+        "transactionAmount": {
+          "amount": "-120.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Oxford Street",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "672712380af75278e4e4ae45231bfb66"
+      },
+      {
+        "transactionId": "2025012701773507-1",
+        "entryReference": "2025012701773507-1",
+        "bookingDate": "2025-01-13",
+        "valueDate": "2025-01-13",
+        "transactionAmount": {
+          "amount": "-9.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Bet Runebor",
+        "remittanceInformationUnstructured": "Bet Runebor",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "abdfaaa3a60aac91601e78b362a410df"
+      },
+      {
+        "transactionId": "2025012701773511-1",
+        "entryReference": "2025012701773511-1",
+        "bookingDate": "2025-01-13",
+        "valueDate": "2025-01-13",
+        "transactionAmount": {
+          "amount": "-49.99",
+          "currency": "EUR"
+        },
+        "creditorName": "Dortshine Dentists",
+        "remittanceInformationUnstructured": "Dortshine Dentists",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "310bfaa6ca1bc2a886fa0d2e1a8816fd"
+      },
+      {
+        "transactionId": "2025012701773502-1",
+        "entryReference": "2025012701773502-1",
+        "bookingDate": "2025-01-12",
+        "valueDate": "2025-01-12",
+        "transactionAmount": {
+          "amount": "3678.55",
+          "currency": "EUR"
+        },
+        "debtorName": "CHRONZYP LTD",
+        "remittanceInformationUnstructured": "Payroll Jan 2025",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "SALARY",
+        "internalTransactionId": "91c66a667495598544ebfd93a3de6633"
+      },
+      {
+        "transactionId": "2025012701773506-1",
+        "entryReference": "2025012701773506-1",
+        "bookingDate": "2025-01-12",
+        "valueDate": "2025-01-12",
+        "transactionAmount": {
+          "amount": "-120.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Oxford Street",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "f45d739ac5bcc0215c6519ef1888cf36"
+      },
+      {
+        "transactionId": "2025012701773510-1",
+        "entryReference": "2025012701773510-1",
+        "bookingDate": "2025-01-12",
+        "valueDate": "2025-01-12",
+        "transactionAmount": {
+          "amount": "-9.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Bet Runebor",
+        "remittanceInformationUnstructured": "Bet Runebor",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "OTHER",
+        "internalTransactionId": "ccea9698753cee27d2c1ccaa8f2b0c91"
+      },
+      {
+        "transactionId": "2025012701773501-1",
+        "entryReference": "2025012701773501-1",
+        "bookingDate": "2025-01-11",
+        "valueDate": "2025-01-11",
+        "transactionAmount": {
+          "amount": "-9.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Bet Runebor",
+        "remittanceInformationUnstructured": "Bet Runebor",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "98a5b4207cd6050e0d7be005b4819f77"
+      },
+      {
+        "transactionId": "2025012701773505-1",
+        "entryReference": "2025012701773505-1",
+        "bookingDate": "2025-01-11",
+        "valueDate": "2025-01-11",
+        "transactionAmount": {
+          "amount": "3678.55",
+          "currency": "EUR"
+        },
+        "debtorName": "CHRONZYP LTD",
+        "remittanceInformationUnstructured": "Payroll Jan 2025",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "SALARY",
+        "internalTransactionId": "bd445f540348919f1a29d6b0fa9a1c36"
+      },
+      {
+        "transactionId": "2025012701773509-1",
+        "entryReference": "2025012701773509-1",
+        "bookingDate": "2025-01-11",
+        "valueDate": "2025-01-11",
+        "transactionAmount": {
+          "amount": "-120.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Freshto Ideal",
+        "remittanceInformationUnstructured": "Freshto Ideal Oxford Street",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "a0d22febf8f99443a8178f2ec682a409"
+      },
+      {
+        "transactionId": "2025012701773504-1",
+        "entryReference": "2025012701773504-1",
+        "bookingDate": "2025-01-10",
+        "valueDate": "2025-01-10",
+        "transactionAmount": {
+          "amount": "-9.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Bet Runebor",
+        "remittanceInformationUnstructured": "Bet Runebor",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "383d93600782dd7f6b9320035d6cb15c"
+      },
+      {
+        "transactionId": "2025012701773508-1",
+        "entryReference": "2025012701773508-1",
+        "bookingDate": "2025-01-10",
+        "valueDate": "2025-01-10",
+        "transactionAmount": {
+          "amount": "3678.55",
+          "currency": "EUR"
+        },
+        "debtorName": "CHRONZYP LTD",
+        "remittanceInformationUnstructured": "Payroll Jan 2025",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "SALARY",
+        "internalTransactionId": "ba90e88d635462785d33acfbcb1f266a"
+      },
+      {
+        "transactionId": "2025012701773507-1",
+        "entryReference": "2025012701773507-1",
+        "bookingDate": "2025-01-09",
+        "valueDate": "2025-01-09",
+        "transactionAmount": {
+          "amount": "-9.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Bet Runebor",
+        "remittanceInformationUnstructured": "Bet Runebor",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "PURCHASE",
+        "internalTransactionId": "1668de63f79339a1b71d8de20cd325ff"
+      }
+    ],
+    "pending": [
+      {
+        "transactionId": "2025012701773518-1",
+        "entryReference": "2025012701773518-1",
+        "valueDate": "2025-01-28",
+        "transactionAmount": {
+          "amount": "-50.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Maximilian Hoffmann",
+        "creditorAccount": {
+          "iban": "DE78500105176237755384"
+        },
+        "remittanceInformationUnstructured": "Alles Gute zum Geburtstag mein Freund!",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER"
+      },
+      {
+        "transactionId": "2025012701773521-1",
+        "entryReference": "2025012701773521-1",
+        "valueDate": "2025-01-27",
+        "transactionAmount": {
+          "amount": "-50.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Maximilian Hoffmann",
+        "creditorAccount": {
+          "iban": "DE78500105176237755384"
+        },
+        "remittanceInformationUnstructured": "Alles Gute zum Geburtstag mein Freund!",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER"
+      },
+      {
+        "transactionId": "2025012701773524-1",
+        "entryReference": "2025012701773524-1",
+        "valueDate": "2025-01-26",
+        "transactionAmount": {
+          "amount": "-50.00",
+          "currency": "EUR"
+        },
+        "creditorName": "Maximilian Hoffmann",
+        "creditorAccount": {
+          "iban": "DE78500105176237755384"
+        },
+        "remittanceInformationUnstructured": "Alles Gute zum Geburtstag mein Freund!",
+        "bankTransactionCode": "PMNT",
+        "proprietaryBankTransactionCode": "TRANSFER"
+      }
+    ]
+  }
+}
