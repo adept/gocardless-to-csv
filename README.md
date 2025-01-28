@@ -25,6 +25,13 @@ As of 2025, GoCardless is mostly limited to Europe, and most notably does not su
 
 GoCardless has pretty severe API usage limits - you can run `fetch` at most 4 times per 24 hours, and `link` at most 50 institutions.
 
+# Installation
+
+Clone this repository and run `pip install -r requirements.txt`.
+
+Tool depends on `nordigen-python` which is a client library for GoCardless API, and `pyfzf` that is used to provide a selector for
+banking institutions (if you have `fzf` command line tool installed). You can remove `pyfzf` from requirements.txt if you dont need this or you don't have `fzf` installed.
+
 # Initial Setup
 
 Go to https://bankaccountdata.gocardless.com/overview/ and register your account
