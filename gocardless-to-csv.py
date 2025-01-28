@@ -15,15 +15,23 @@ def configure_new_connection(client, config, args):
     """
     Configure connection to a new bank via several interactive prompts
     """
-    country_code = input("Enter the country code in ISO 3166 format: ")
+    if args.sandbox:
+        print("Using Sandbox Finance (SANDBOXFINANCE_SFIN0000)")
+        institution={}
+        institution['id']="SANDBOXFINANCE_SFIN0000"
+        institution['transaction_total_days']=90
+        institution['max_access_valid_for_days']=90
+    else:
+        country_code = input("Enter the country code in ISO 3166 format: ")
 
-    # Get all institution by providing country code in ISO 3166 format
-    institutions = client.institution.get_institutions(country_code)
-    institution_name=(fzf.prompt([i['name'] for i in institutions]))[0]
-    print(institution_name)
-    institution = [i for i in institutions if i['name']==institution_name][0]
+        # Get all institution by providing country code in ISO 3166 format
+        institutions = client.institution.get_institutions(country_code)
+        institution_name=(fzf.prompt([i['name'] for i in institutions]))[0]
+        print(institution_name)
+        institution = [i for i in institutions if i['name']==institution_name][0]
 
-    print(institution)
+        print(institution)
+
     your_ref = input("Name this setup (needed if you want to delete it later): ")
 
     # Initialize a new session
@@ -110,6 +118,7 @@ if __name__ == "__main__":
     subparsers = parser.add_subparsers(help='subcommand help', title="valid commands")
 
     parser_setup = subparsers.add_parser('setup', help='Setup a new connection to a bank')
+    parser_setup.add_argument("--sandbox", action='store_true', help="Use Sandbox Finanace (provided by GoCardless for testing)")
     parser_setup.set_defaults(func=configure_new_connection)
 
     parser_list = subparsers.add_parser('list', help='List accounts for existing connections')
