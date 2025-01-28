@@ -5,6 +5,7 @@ from datetime import datetime
 import configparser
 import argparse
 import json
+import csv
 
 from nordigen import NordigenClient
 
@@ -104,9 +105,48 @@ def convert(client,config,args):
     """
     print(args.json_file)
     # Read the JSON file
-    transactions = json.load(args.json_file)
+    with open(args.json_file, 'r') as f:
+        transactions = json.load(f)
 
-    print(transactions['transactions']['booked'])
+    if args.pending:
+        transactions = transactions['transactions']['pending']
+    else:
+        transactions = transactions['transactions']['booked']
+
+    with open(args.csv_file, 'w') as f:
+        fieldnames = ["bookingDate", "valueDate", "operation", "payee", "transactionAmount", "instructedAmount", "description", "GoCardlessRef"]
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for trx in transactions:
+            if "transactionId" in trx:
+                row = {
+                    "GoCardlessRef": trx["transactionId"],
+                }
+            else:
+                row = {}
+
+            if "creditorName" in trx:
+                row["payee"] = trx["creditorName"]
+                row["operation"] = "credit"
+            if "debtorName" in trx:
+                row["payee"] = trx["debtorName"]
+                row["operation"] = "debit"
+            if "currencyExchange" in trx:
+                instructedAmount = trx["currencyExchange"]["instructedAmount"]
+                row["instructedAmount"] = (
+                    instructedAmount["currency"] + " " + instructedAmount["amount"]
+                )
+            row['bookingDate'] = trx["bookingDate"]
+            row['valueDate'] = trx["bookingDate"]
+            description = ""
+            if "remittanceInformationUnstructured" in trx:
+                description += trx["remittanceInformationUnstructured"]
+            if "remittanceInformationUnstructuredArray" in trx:
+                description += " ".join(trx["remittanceInformationUnstructuredArray"])
+            row['description'] = description
+            row["transactionAmount"] = trx["transactionAmount"]["currency"] + " " + trx["transactionAmount"]["amount"]
+            writer.writerow(row)
+
 
 if __name__ == "__main__":
     # Parse command line arguments
@@ -131,7 +171,9 @@ if __name__ == "__main__":
     parser_fetch.set_defaults(func=fetch)
 
     parser_convert = subparsers.add_parser('convert', help='Convert GoCardless JSON file to CSV')
-    parser_convert.add_argument("json_file", type=str, help="Path to the JSON file")
+    parser_convert.add_argument("json_file", type=str, help="Path to the input JSON file")
+    parser_convert.add_argument("csv_file", type=str, help="Path to the output CSV file")
+    parser_convert.add_argument("--pending", action='store_true', help="Process pending transactions instead of booked")
     parser_convert.set_defaults(func=convert)
 
     args = parser.parse_args()
