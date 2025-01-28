@@ -89,14 +89,16 @@ def fetch(client, config, args):
             acc = client.account_api(id=account)
             try:
                 if args.year:
+                    date_from = f"{args.year}-01-01"
                     current_year = datetime.now().year
                     if args.year == current_year:
                         date_to = datetime.now().strftime("%Y-%m-%d")
                     else:
                         date_to = f"{args.year}-12-31"
-                    transactions = acc.get_transactions(date_from=f"{args.year}-01-01", date_to=date_to)
                 else:
-                    transactions = acc.get_transactions(date_from=args.start, date_to=args.end)
+                    date_from = args.start
+                    date_to = args.end
+                transactions = acc.get_transactions(date_from=date_from, date_to=date_to)
             except Exception as e:
                 print(f"  Error fetching transactions for {account}: {e}")
                 continue
@@ -104,8 +106,17 @@ def fetch(client, config, args):
             if args.debug:
                 print(transactions)
             if config[account]['file']:
-                with open(config[account]['file'], 'w') as f:
+                if date_from:
+                    # Create the filename based on the date_from, assuming filename contains strftime format specifiers
+                    filename=datetime.strftime(datetime.fromisoformat(date_from), config[account]['file'])
+                    dirname=os.path.dirname(filename)
+                    if not os.path.exists(dirname):
+                        os.makedirs(dirname)
+                else:
+                    filename=config[account]['file']
+                with open(filename, 'w') as f:
                     json.dump(transactions,f,indent=2)
+                print(f"  {account}[{date_from}..{date_to}] saved to {filename}")
             else:
                 print(json.dumps(transactions,indent=2))
 
