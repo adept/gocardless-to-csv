@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Script that pulls data from GoCardless API (formerly Nordigen) and saves it to a CSV file, suitable for parsing with hledger/ledger/...
 # We are using https://github.com/nordigen/nordigen-python library to interact with the API.
 import os
