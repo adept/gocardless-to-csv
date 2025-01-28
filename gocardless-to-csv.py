@@ -10,8 +10,6 @@ import csv
 
 from nordigen import NordigenClient
 
-from pyfzf.pyfzf import FzfPrompt
-fzf = FzfPrompt()
 
 def configure_new_connection(client, config, args):
     """
@@ -28,8 +26,19 @@ def configure_new_connection(client, config, args):
 
         # Get all institution by providing country code in ISO 3166 format
         institutions = client.institution.get_institutions(country_code)
-        institution_name=(fzf.prompt([i['name'] for i in institutions]))[0]
-        print(institution_name)
+        try:
+            from pyfzf.pyfzf import FzfPrompt
+            fzf = FzfPrompt()
+
+            institution_name=(fzf.prompt([i['name'] for i in institutions]))[0]
+        except ModuleNotFoundError:
+            print("Please install pyfzf for interactive selection")
+            print("pip install pyfzf")
+            print("Alternatively, you can select the institution name manually from the list below")
+            for i in institutions:
+                print(i)
+            institution_name = input("Enter the name of the institution: ")
+
         institution = [i for i in institutions if i['name']==institution_name][0]
 
         print(institution)
