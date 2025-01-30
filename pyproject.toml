@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gocardless-to-csv"
+version = "0.5.0"
+description = "Client for GoCardless Bank Data API that pulls transaction history and converts it to CSV"
+authors = ["Dmitry Astapov <dastapov@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pyfzf = ">=0.3.1"
+nordigen = ">=1.4.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
