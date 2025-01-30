@@ -1,2 +1,2 @@
-nordigen-python
+nordigen
 pyfzf
