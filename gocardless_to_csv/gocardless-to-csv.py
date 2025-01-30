@@ -226,4 +226,7 @@ if __name__ == "__main__":
     )
     client.generate_token()
 
-    args.func(client, config, args)
+    try:
+        args.func(client, config, args)
+    except AttributeError:
+        parser.print_help()
