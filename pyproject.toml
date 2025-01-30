@@ -4,6 +4,8 @@ version = "0.5.0"
 description = "Client for GoCardless Bank Data API that pulls transaction history and converts it to CSV"
 authors = ["Dmitry Astapov <dastapov@gmail.com>"]
 license = "MIT"
+repository = "https://github.com/adept/gocardless-to-csv"
+keywords = ["ledger", "hledger", "gocardless", "plain text accounting", "pta"]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4.0"

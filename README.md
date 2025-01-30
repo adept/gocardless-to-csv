@@ -31,7 +31,11 @@ Obviously, you need to be happy with GoCardless seeing your accounts and transac
 
 # Installation
 
-Clone this repository and run `pip install -r requirements.txt`.
+This package is [available on PyPI](https://pypi.org/project/gocardless-to-csv/), so you can install it with `pip install gocardless-to-csv`
+
+Alternatively, you can clone this repository and use `poetry`: `poetry install`
+
+If you dont have or dont use poetry, clone this repository and run `pip install -r requirements.txt`.
 
 Tool depends on `nordigen-python` which is a client library for GoCardless API, and `pyfzf` that is used to provide a selector for
 banking institutions (if you have `fzf` command line tool installed). You can remove `pyfzf` from requirements.txt if you dont need this or you don't have `fzf` installed.
