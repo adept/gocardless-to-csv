@@ -127,9 +127,15 @@ GoCardless rate limits -- you would want to keep your `fetch` invocations to a m
 
 - `payee` - who or which organization was on the other side of the transaction
 
+- `transactionCurrency` - the currency in which your bank charged you (the currency of your account)
+
 - `transactionAmount` - how much your bank charged you (in the currency of your account)
 
-- `instructedAmount` - how much the `payee` originally charged you  (in the currency of payee's choice)
+- `instructedCurrency` - the currency in which the `payee` originally charged you -- could be empty
+ 
+- `instructedAmount` - how much the `payee` originally charged you -- could be empty
+
+- `exchangeRate` - exchange rate that your bank applied for `instructedCurrency` -- could be empty
 
 - `description` - description collected by GoCardless
 
