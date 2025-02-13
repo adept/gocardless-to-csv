@@ -147,7 +147,7 @@ def convert(client,config,args):
         transactions = transactions['transactions']['booked']
 
     with open(args.csv_file, 'w') as f:
-        fieldnames = ["bookingDate", "valueDate", "operation", "payee", "transactionAmount", "instructedAmount", "description", "GoCardlessRef"]
+        fieldnames = ["bookingDate", "valueDate", "operation", "payee", "transactionCurrency", "transactionAmount", "instructedCurrency", "instructedAmount", "exchangeRate", "description", "GoCardlessRef"]
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         for trx in transactions:
@@ -165,11 +165,13 @@ def convert(client,config,args):
             if "debtorName" in trx:
                 row["payee"] = trx["debtorName"]
                 row["operation"] = "debit"
-            if "currencyExchange" in trx:
+            if "currencyExchange" in trx and "instructedAmount" in trx["currencyExchange"]:
                 instructedAmount = trx["currencyExchange"]["instructedAmount"]
-                row["instructedAmount"] = (
-                    instructedAmount["currency"] + " " + instructedAmount["amount"]
-                )
+                row["instructedCurrency"] = instructedAmount["currency"]
+                row["instructedAmount"] = instructedAmount["amount"]
+            if "currencyExchange" in trx and "exchangeRate" in trx["currencyExchange"]:
+                row["instructedCurrency"] = trx["currencyExchange"]["sourceCurrency"]
+                row["exchangeRate"] = trx["currencyExchange"]["exchangeRate"]
             row['bookingDate'] = trx["bookingDate"]
             row['valueDate'] = trx["bookingDate"]
             description = ""
@@ -178,7 +180,8 @@ def convert(client,config,args):
             if "remittanceInformationUnstructuredArray" in trx:
                 description += " ".join(trx["remittanceInformationUnstructuredArray"])
             row['description'] = description
-            row["transactionAmount"] = trx["transactionAmount"]["currency"] + " " + trx["transactionAmount"]["amount"]
+            row["transactionCurrency"] = trx["transactionAmount"]["currency"]
+            row["transactionAmount"] = trx["transactionAmount"]["amount"]
             writer.writerow(row)
 
 if __name__ == "__main__":

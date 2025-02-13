@@ -10,6 +10,7 @@
           "amount": "-95.35",
           "currency": "EUR"
         },
+        "currencyExchange": { "sourceCurrency": "USD", "exchangeRate": "1.236842105" },
         "creditorName": "Freshto Ideal",
         "remittanceInformationUnstructured": "Freshto Ideal Clerkenwell",
         "bankTransactionCode": "PMNT",
@@ -25,6 +26,7 @@
           "amount": "15.00",
           "currency": "EUR"
         },
+        "currencyExchange": {"instructedAmount": {"amount": "81.33", "currency": "USD"}},
         "debtorName": "Jennifer Houston",
         "debtorAccount": {
           "iban": "IE96BOFI900017816198"
