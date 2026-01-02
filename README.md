@@ -1,5 +1,9 @@
 # GoCardless-to-CSV
 
+# Update 2026-01-01
+
+⚠️ As of 2026-01-01, GoCardLess does not seem to be taking new signunps (see [issue #4](../../issues/4)) ⚠️
+
 # What is this? 
 
 In Europe, GoCardless allows you to use OpenBanking to fetch transaction statements from your bank in a single unified format.
